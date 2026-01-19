@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import pdfToXml from "../assets/images/PdfToXml.png";
 import docToXml from "../assets/images/DocToXml.png";
 import htmlToXml from "../assets/images/htmlToXml.png";
+import validationImg from "../assets/images/Validation.png";
+import contentDigitizationImg from "../assets/images/Content Digitization.png";
 
 function Services() {
   return (
@@ -158,7 +160,7 @@ function Services() {
           <div className="grid lg:grid-cols-2 gap-10 items-center animate-fadeUp">
             {/* Swapped order for visual variety */}
             <div className="hidden lg:flex items-center justify-center p-10 bg-white rounded-3xl shadow-lg border border-gray-100 order-last lg:order-first">
-              <i className="fa-solid fa-file-shield text-9xl text-cyan-100"></i>
+              <img src={validationImg} alt="DTD/XSD Validation" className="w-full max-w-md h-auto object-contain" />
             </div>
             <div>
               <div className="w-12 h-12 bg-cyan-100 flex items-center justify-center rounded-xl shadow-sm mb-6">
@@ -210,7 +212,7 @@ function Services() {
               </div>
             </div>
             <div className="hidden lg:flex items-center justify-center p-10 bg-white rounded-3xl shadow-lg border border-gray-100">
-              <i className="fa-solid fa-box-archive text-9xl text-orange-100"></i>
+              <img src={contentDigitizationImg} alt="Content Digitization" className="w-full max-w-md h-auto object-contain" />
             </div>
           </div>
 
