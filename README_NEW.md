@@ -255,23 +255,16 @@ Smart XML Solutions uses simple authentication for admin access.
 
 | Method | Endpoint            | Description                  |
 | ------ | ------------------- | ---------------------------- |
-| GET    | `/api/services`     | List all XML services        |
-| GET    | `/api/industries`   | List industries served       |
-| POST   | `/api/contact`      | Submit contact form          |
-| POST   | `/api/applications` | Submit service request       |
-| GET    | `/api/process`      | Get process workflow details |
+| POST   | `/api/contact/save` | to save the user response    |
+| GET    | `/api/service/get`  | to display the chart details |
 
 ### Protected Endpoints (Admin Only)
 
-| Method | Endpoint                      | Description                |
-| ------ | ----------------------------- | -------------------------- |
-| GET    | `/api/admin/contact`          | List all contact inquiries |
-| PATCH  | `/api/admin/contact/:id`      | Update contact status      |
-| GET    | `/api/admin/applications`     | List service applications  |
-| PATCH  | `/api/admin/applications/:id` | Update application status  |
-| POST   | `/api/admin/services`         | Create new service         |
-| PUT    | `/api/admin/services/:id`     | Update service             |
-| DELETE | `/api/admin/services/:id`     | Delete service             |
+| Method | Endpoint                               | Description                   |
+| ------ | -------------------------------------- | ----------------------------- |
+| GET    | `/api/contacts/all`                    | to get all the user responses |
+| PUT    | `/api/service/update`                  | Update chart                  |
+| DELETE | `/api/contact/delete/<int:contact_id>` | Delete user response          |
 
 ---
 
