@@ -1,0 +1,7 @@
+{
+    "name": "smart-xml-solutions-root",
+    "private": true,
+    "scripts": {
+        "build": "cd smart-xml-docs && npm install && npm run build && mkdir -p ../dist && cp -r dist/* ../dist/"
+    }
+}
