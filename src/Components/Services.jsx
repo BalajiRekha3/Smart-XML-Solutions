@@ -10,8 +10,8 @@ function Services() {
       <section className="hero-section relative bg-gradient-to-br from-[#0b1120] via-[#1c4e80] to-[#0b1120] text-white py-24 px-6 overflow-hidden">
 
         <div className="max-w-4xl mx-auto text-center relative z-10 animate-fadeUp">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-white">
-            Our Services
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight leading-tight">
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">Services</span>
           </h1>
           <p className="text-lg md:text-xl text-blue-100 leading-relaxed max-w-2xl mx-auto font-light">
             Comprehensive XML and data processing solutions designed to meet enterprise

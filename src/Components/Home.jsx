@@ -44,7 +44,7 @@ function Home() {
 
             <NavLink
               to="/services"
-              className="border border-white/30 bg-white/10 backdrop-blur-sm px-8 py-4 rounded-full text-white font-semibold hover:bg-white hover:text-slate-900 transition-all duration-300"
+              className="border border-[#ffffff4d] bg-[#ffffff1a] backdrop-blur-sm px-8 py-4 rounded-full text-[#ffffff] font-semibold hover:bg-[#ffffff] hover:text-[#0f172a] transition-all duration-300"
             >
               Explore Services
             </NavLink>
