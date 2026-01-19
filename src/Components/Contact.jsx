@@ -135,6 +135,7 @@ function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Your Name"
+                  pattern="[a-zA-Z]{3,}"
                   required
                   className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 transition-all outline-none"
                 />
@@ -147,6 +148,7 @@ function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="name@company.com"
+                  pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,7}"
                   required
                   className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 transition-all outline-none"
                 />
@@ -161,6 +163,7 @@ function Contact() {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="+1 (555) 000-0000"
+                pattern="[6-9][0-9]{9}"
                 maxLength={10}
                 onInput={(e) => (e.target.value = e.target.value.replace(/[^0-9]/g, ""))}
                 className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 transition-all outline-none"
